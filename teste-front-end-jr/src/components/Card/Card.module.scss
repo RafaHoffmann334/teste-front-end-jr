@@ -1,0 +1,53 @@
+$secondary-color: #3F3F40;
+
+@mixin set-text($color, $size, $weight) {
+   color: $color;
+   font-size: $size;
+   font-weight: $weight;
+}
+
+.card {
+   width: 100%;
+   height: 500px;
+   padding: 30px 15px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 20px 0px #D4D4D4;
+
+      .description {
+         @include set-text($secondary-color, 15px, 300);
+         margin-bottom: 10px;
+      }
+
+      .price_description {
+         margin-bottom: 10px;
+         display: flex;
+         gap: 3px;
+         flex-direction: column;
+
+            .discount {
+               @include set-text(#808080, 16px, 400);
+               text-decoration: line-through;
+            }
+
+            .current_price {
+               @include set-text($secondary-color, 20px, 700);
+            }
+
+            .installments, .freight {
+               @include set-text($secondary-color, 12px, 400);
+            }
+
+            .freight {
+               color: #F71963;
+            }
+      }
+
+      button {
+         width: 100%;
+         height: 44px;
+         background-color: #F71963;
+         border: none;
+         border-radius: 4px;
+         @include set-text(#FFFFFF, 14px, 700);
+      }
+}

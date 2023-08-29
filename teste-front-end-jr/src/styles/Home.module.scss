@@ -1,0 +1,296 @@
+@mixin flex {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ @mixin overlay {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('../../public/bg-shadow.png');
+      background-size: cover;
+ }
+ @mixin lines($property, $position) {
+   content: '';
+   display: inline-block;
+   width: 250px;
+   height: 1px;
+   background-color: #DEDEDE;
+   position: absolute;
+   #{$property}: $position;
+   top: 50%;
+   z-index: 1;
+ }
+
+.banner {
+   position: relative;
+   width: 100%;
+   height: 395px;
+   margin-top: 30px;
+   margin-bottom: 40px;
+   padding: 50px 13.5vw;
+   background: url('../../public/bg-image.png') no-repeat center;
+   background-size: cover;
+
+   &::before { @include overlay }
+
+      .banner_text {
+         position: absolute;
+         z-index: 1;
+         display: flex;
+         justify-content: flex-start;
+         flex-direction: column;
+
+         h1 {
+            width: 600px;
+            color: #fff;
+            font-size: 48px;
+            font-weight: 600;
+         }
+   
+         h2 {
+            color: #fff;
+            font-size: 36px;
+            font-weight: 600;
+         }
+   
+         button {
+            width: 227px;
+            height: 60px;
+            margin-top: 20px;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;   
+            background-color: #F71963;
+         }
+      }
+}
+
+.main {
+   width: 100%;
+
+      .categories {
+         width: 100%;
+         height: 174px;
+         margin-bottom: 30px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 70px;
+      }
+
+      .options_container {
+         width: 100%;
+         margin-bottom: 20px;
+         @include flex;
+         flex-direction: column;
+         gap: 15px;
+
+            h2 {
+               position: relative;
+               color: #F71963;
+               font-size: 30px;
+               font-weight: 700;
+
+               &::before { @include lines(left, 380px) }
+
+               &::after { @include lines(right, 380px) }
+            }
+
+            .products_options {
+               width: 100%;
+               @include flex;
+
+                  a {
+                     width: 100%;
+                     height: 40px;
+                     @include flex;
+                     border: 1px solid #BDBDBD;
+                     color: #3B3B3B;
+                     font-size: 16px;
+                     font-weight: 400;
+
+                     &:first-child {
+                        color:  #F71963;
+                        font-weight: 700;
+                     }
+                  }
+            }
+      }
+
+      .showcase {
+         position: relative;
+
+            .button_left, .button_right {
+               height: 100%;
+               position: absolute;
+            }
+
+            .button_left {
+               left: 10%;
+               bottom: -10%;
+            }
+
+            .button_right {
+               right: 10%;
+               bottom: -10%;
+            }
+
+            .card_container {
+               width: 100%;
+               height: 520px;
+               @include flex;
+               gap: 90px;
+               overflow: hidden;  
+            }
+      }
+
+      .section_container {
+         padding-top: 50px;
+
+            .card_container {
+               @include flex;
+               justify-content: space-between;
+
+                  .partners_card {
+                     position: relative;
+                     background: url('../../public/bg-card.png') no-repeat;
+                     width: 574px;
+                     height: 350px;
+                     padding: 105px 30px;
+                     border-radius: 15px;
+
+                     &::before { 
+                        @include overlay; 
+                        border-bottom-left-radius: 15px; 
+                        border-bottom-right-radius: 15px; 
+                     }
+                  }
+
+                  .products_card {
+                     position: relative;
+                     background: url('../../public/bg-card.png') no-repeat;
+                     width: 589.73px;
+                     height: 284px;
+                     padding: 50px 30px;
+                     border-radius: 15px;
+
+                     &::before { 
+                        @include overlay; 
+                        border-bottom-left-radius: 15px; 
+                        border-bottom-right-radius: 15px; 
+                     }
+                  }
+
+                  .partners_card .text, .products_card .text {
+                     position: absolute;
+                     z-index: 1;
+                  }
+                  
+                  .partners_card .text h2, .products_card .text h2 {
+                     color: #FFFFFF;
+                     font-size: 40px;
+                     font-weight: 400;
+                  }
+
+                  .partners_card .text p, .products_card .text p {
+                     margin: 30px 0;
+                     width: 181px;
+                     color: #FFFFFF;
+                     font-size: 16px;
+                     font-weight: 400;
+                  }
+
+                  button {
+                     width: 131px;
+                     height: 38px;
+                     background-color: #F71963;
+                     border: none;
+                     border-radius: 10px;
+                     color: #FFFFFF;
+                     font-size: 18px;
+                     font-weight: 700;
+                  }
+            }
+      }
+
+      .div {
+         width: 100%;
+         margin: 50px 0px; 
+         @include flex;
+         flex-direction: column;
+
+            h3 {
+               position: relative;
+               color: #F71963;
+               font-size: 30px;
+               font-weight: 700;
+
+               &::before { @include lines(left, 380px) }
+
+               &::after { @include lines(right, 380px) }
+            }
+            
+            a {
+               color: #3F3F40;
+               font-size: 15px;
+               font-weight: 700;
+            }
+      }
+
+      .section_brands {
+         margin-top: 70px;
+
+            h2 {
+               text-align: center;
+               color: #F71963;
+               font-size: 30px;
+               font-weight: 700;
+            }
+
+            .brands_container {
+               position: relative;
+               width: 100%;
+               @include flex;
+               justify-content: space-between;
+               margin-top: 70px;
+
+                  .next_button {
+                     position: absolute;
+                     right: 18px;
+                     width: 56px;
+                     height: 56px;
+                     @include flex;
+                     background-color: #FFFFFF;
+                     border: none;
+                     border-radius: 100%;
+                     box-shadow: 0px 0px 20px 0px #B1B1B1;
+                  }
+
+                  .brand {
+                     width: 211px;
+                     height: 211px;
+                     @include flex;
+                     border-radius: 100%;
+                     box-shadow: 0px 0px 20px 0px #D4D4D4;
+
+                        .logo {
+                              width: 73.17px;
+                              height: 62.66px;
+                        }
+
+                        img {
+                           width: 23.38px;
+                           height: 26.43px;
+                        }
+                  }
+            }
+         
+      }
+}
