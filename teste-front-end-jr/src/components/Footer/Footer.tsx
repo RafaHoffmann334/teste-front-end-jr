@@ -3,27 +3,27 @@ import styles from "./Footer.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-import YoutubeLogo from "@/public/youtube.svg";
-import FacebookLogo from "@/public/facebook.svg";
-import InstagramLogo from "@/public/instagram.svg";
-import EconverseLogo from "@/public/econverse.svg";
+import YoutubeLogo from "@/public/icons/youtube.svg";
+import FacebookLogo from "@/public/icons/facebook.svg";
+import InstagramLogo from "@/public/icons/instagram.svg";
+import EconverseLogo from "@/public/icons/econverse.svg";
 
-import LogoWhite from "@/public/images/Logo-White.svg";
-import LogoVWhite from "@/public/images/Logo-V-White.svg";
-import LogoTWhite from "@/public/images/Logo-T-White.svg";
-import LogoEWhite from "@/public/images/Logo-E-White.svg";
-import LogoXWhite from "@/public/images/Logo-X-White.svg";
+import LogoWhite from "@/public/icons/Logo-White.svg";
+import LogoVWhite from "@/public/icons/Logo-V-White.svg";
+import LogoTWhite from "@/public/icons/Logo-T-White.svg";
+import LogoEWhite from "@/public/icons/Logo-E-White.svg";
+import LogoXWhite from "@/public/icons/Logo-X-White.svg";
 
-import EloLogo from "@/public/elo.svg";
-import PixLogo from "@/public/pix.svg";
-import VisaLogo from "@/public/visa.svg";
-import AmexLogo from "@/public/amex.svg";
-import AleloLogo from "@/public/alelo.svg";
-import IfoodLogo from "@/public/ifood.svg";
-import SodexoLogo from "@/public/sodexo.svg";
-import TicketLogo from "@/public/ticket.svg";
-import DinnersLogo from "@/public/dinners.svg";
-import MasterCardLogo from "@/public/mastercard.svg";
+import EloLogo from "@/public/icons/elo.svg";
+import PixLogo from "@/public/icons/pix.svg";
+import VisaLogo from "@/public/icons/visa.svg";
+import AmexLogo from "@/public/icons/amex.svg";
+import AleloLogo from "@/public/icons/alelo.svg";
+import IfoodLogo from "@/public/icons/ifood.svg";
+import SodexoLogo from "@/public/icons/sodexo.svg";
+import TicketLogo from "@/public/icons/ticket.svg";
+import DinnersLogo from "@/public/icons/dinners.svg";
+import MasterCardLogo from "@/public/icons/mastercard.svg";
 
 export default function Footer() {
   return (

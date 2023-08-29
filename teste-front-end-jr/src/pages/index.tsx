@@ -9,30 +9,29 @@ import Link from "next/link";
 
 import { IProducts, ModalProps } from "@/interfaces/interface";
 
-import Modal from "@/components/Modal/Modal";
 import Card from "@/components/Card/Card";
+import Modal from "@/components/Modal/Modal";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Category from "@/components/Category/Category";
 
-import Race from "@/public/categories/corrida.svg";
-import Fashion from "@/public/categories/moda.svg";
-import Drinks from "@/public/categories/whiskey.svg";
-import Gears from "@/public/categories/ferramentas.svg";
-import Health from "@/public/categories/cuidados-saude.svg";
-import Monitoring from "@/public/categories/monitoramento.svg";
-import SuperMarket from "@/public/categories/supermercados.svg";
+import Race from "@/public/icons/corrida.svg";
+import Fashion from "@/public/icons/moda.svg";
+import Drinks from "@/public/icons/whiskey.svg";
+import Gears from "@/public/icons/ferramentas.svg";
+import Health from "@/public/icons/cuidados-saude.svg";
+import Monitoring from "@/public/icons/monitoramento.svg";
+import SuperMarket from "@/public/icons/supermercados.svg";
 
-import ArrowLeft from "@/public/categories/ArrowLeft.svg";
-import ArrowRight from "@/public/categories/ArrowRigth.svg";
+import ArrowLeft from "@/public/icons/ArrowLeft.svg";
+import NextArrow from "@/public/icons/NextArrow.svg";
+import ArrowRight from "@/public/icons/ArrowRigth.svg";
 
-import Logo from "@/public/images/Logo.svg";
-import LogoV from "@/public/images/Logo-V.svg";
-import LogoT from "@/public/images/Logo-T.svg";
-import LogoE from "@/public/images/Logo-E.svg";
-import LogoX from "@/public/images/Logo-X.svg";
-
-import NextArrow from "../../public/NextArrow.svg";
+import Logo from "@/public/icons/Logo.svg";
+import LogoV from "@/public/icons/Logo-V.svg";
+import LogoT from "@/public/icons/Logo-T.svg";
+import LogoE from "@/public/icons/Logo-E.svg";
+import LogoX from "@/public/icons/Logo-X.svg";
 
 export default function Home(props: IProducts) {
   const { products } = props;

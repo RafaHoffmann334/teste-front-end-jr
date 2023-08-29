@@ -3,20 +3,20 @@ import styles from "./Header.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-import Logo from "@/public/images/Logo.svg";
-import Truck from "@/public/images/Truck.svg";
-import Group from "@/public/images/Group.svg";
-import Heart from "@/public/images/Heart.svg";
-import LogoV from "@/public/images/Logo-V.svg";
-import LogoT from "@/public/images/Logo-T.svg";
-import LogoE from "@/public/images/Logo-E.svg";
-import LogoX from "@/public/images/Logo-X.svg";
-import UserCilce from "@/public/images/UserCircle.svg";
-import CreditCard from "@/public/images/CreditCard.svg";
-import ShieldCheck from "@/public/images/ShieldCheck.svg";
-import CrownSimple from "@/public/images/CrownSimple.svg";
-import MagnifyingGlass from "@/public/MagnifyingGlass.svg";
-import ShoppingCart from "@/public/images/ShoppingCart.svg";
+import Logo from "@/public/icons/Logo.svg";
+import Truck from "@/public/icons/Truck.svg";
+import Group from "@/public/icons/Group.svg";
+import Heart from "@/public/icons/Heart.svg";
+import LogoV from "@/public/icons/Logo-V.svg";
+import LogoT from "@/public/icons/Logo-T.svg";
+import LogoE from "@/public/icons/Logo-E.svg";
+import LogoX from "@/public/icons/Logo-X.svg";
+import UserCilce from "@/public/icons/UserCircle.svg";
+import CreditCard from "@/public/icons/CreditCard.svg";
+import ShieldCheck from "@/public/icons/ShieldCheck.svg";
+import CrownSimple from "@/public/icons/CrownSimple.svg";
+import MagnifyingGlass from "@/public/icons/MagnifyingGlass.svg";
+import ShoppingCart from "@/public/icons/ShoppingCart.svg";
 
 export default function Header() {
   return (

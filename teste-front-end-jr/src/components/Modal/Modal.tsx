@@ -3,11 +3,10 @@ import styles from "./Modal.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-import Minus from "@/public/minus.svg";
-import Plus from "@/public/plus.svg";
+import Minus from "@/public/icons/minus.svg";
+import Plus from "@/public/icons/plus.svg";
 
 import { ModalProps } from "@/interfaces/interface";
-import { useState } from "react";
 
 export default function Modal({
   photo,
